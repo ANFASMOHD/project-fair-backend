@@ -1,0 +1,133 @@
+
+                                          Node Js
+                                       -------------
+            is not a programing language 
+            it provide a runtime environment for javascript to run outside the browser
+            it provides some javascript libraries along with it.
+            it is opensource server environment 
+            
+            how php and asp.Net handle
+             the request accept-->resovle--->send the reponse back--->ready to accept another request.
+             node js
+             accept request first request---->send to resolve the first request--`-->readt to accept--->reponse send 
+
+
+             features
+             ---------
+             Extremly Faster -browser engine (v8)
+             based on asyncgronous programming
+             single  threaded
+             highly scalable
+
+             file-
+             -----
+             ectension -filname .js
+
+             what are modules in Node .js-
+             ---------
+             each files/javascript libraries  inside a node js is called modules
+              modules are of two types 
+              - custome modules
+              - builtIn modules
+
+              inorder to use these modules we need Imports Exports these modules.
+              import-Require('')-ESS
+              export -Module.Exports
+                 -export
+
+
+              BuiltIn modules
+              -----------
+              file System: Node.js file System Modules allows you to work with the file System in your programing
+              
+              import statement -var variable=require('fs')
+              common uses
+              Read file-fs.readFile()
+
+              create file-fs.open()
+              update file -fs.writeFile()
+              Delelte file -fs.unlink()
+              Rename  file-fs.rename()
+
+2) Http module 
+---- it allows node.js to transfer data over the http 
+       - geneating http requests.
+       -http module can create a http server the listern to server ports and gives a response back to the client  
+      -createServer()-method to create http server
+3)- event module -to create events -
+  class eventmitter ()= object 
+  4) crypto =encryption ,hashing 
+
+  Backend Concept
+  ---------
+  client server architecture -sending request and response between two application
+  api-application programming interface 
+  Restfulapi-http and json
+  CRUD-create read update delete 
+  CORS-cross origin resource sharing .(frontend will be running on one port and the backend will be running on another port number)
+
+Server Creation
+---------
+1-   create a folder for the server
+2-   install packag.json    nom init -y
+3   -edit the script key in pakge.json
+4-
+install-
+express - framework of node.js - installation-npm i express
+cors   - installation - npm i cors
+dotenv - as a zero dependency module that loads environment variable from .env file to process .env
+environment variables :provides information about the environment in which the process is running 
+npm i express cors dotenv
+5-create .env file to holds environment variable
+6- create .gitignore
+mention -   node_modules
+              .env inside files
+
+7- create index.js file expecially        
+       
+
+
+ 
+9) create controller file 
+-logic to resolve file client request 
+
+
+mvc architecture
+-----------
+-VIEW-frontent 
+-ROUTING-to set path to resolve request 
+-CONTROLLER-to write  logic to resolve 
+MODEL- structure to store data in database
+-DATABASE- to store database
+
+
+MONGODB
+ USED to store
+
+ -commands
+ ----------
+ 1) show database- to get all database inside mongodb
+ 2) usedatabase_name- to change diectory to move into a particular database
+ 3) show collection -to get all collection in a database
+ 4)db.users.find().sort ({username:1})-accending
+ 5)db.users.find().sort ({username:-1})-deccending
+
+
+
+ JWT
+ _________
+
+it define compact and self contain for securly transmitting information between to parties as json object 
+
+
+middle ware
+----
+
+
+there two types of middle ware
+
+application middle ware--
+ROUTING middle ware
+
+multer
+Multer is a node.js middleware for handling multipart/form-data, which is primarily used for uploading files
